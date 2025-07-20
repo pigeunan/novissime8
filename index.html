@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>뭐지이게?무언가알아냈어요</title>
+    <style>
+        /* DungGeunMo 폰트 직접 로드 시도 (woff2 포맷 우선) */
+        @font-face {
+            font-family: 'DungGeunMo';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff2') format('woff2'),
+                 url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap; /* 폰트 로드 중에도 텍스트 표시 */
+        }
+
+        body {
+            background-color: #000000; /* 검은색 배경 */
+            color: #FFFFFF; /* 흰색 글씨 */
+            font-family: 'DungGeunMo', monospace; /* 한글 픽셀 폰트 우선, 없으면 고정폭 폰트 */
+            font-size: 16px; /* em 단위 계산의 기준이 되는 기본 폰트 크기 (1em = 16px) */
+            line-height: 1.6; /* 줄 간격 유지 */
+            margin: 30px; /* 여백 유지 */
+            padding: 0;
+            /* 폰트 렌더링 최적화 (일부 브라우저에서 픽셀 폰트가 부드럽게 보이지 않도록) */
+            -webkit-font-smoothing: none; /* Chrome, Safari */
+            font-smooth: never; /* Firefox */
+            image-rendering: pixelated; /* Safari, Chrome, Firefox */
+        }
+
+        .content {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 15px;
+            padding-left: 5px; /* 글자를 살짝 왼쪽으로 옮김 */
+            text-align: left; /* 텍스트 정렬을 왼쪽으로 변경 */
+        }
+
+        p {
+            margin-bottom: 20px; /* 문단 아래 간격 유지 */
+            text-align: left; /* 모든 문단을 왼쪽 정렬 */
+            font-size: 0.55em; /* 평소 사용하시던 기본 크기 (16px의 0.55배 = 8.8px) */
+        }
+
+        strong {
+            color: #FFFFFF; /* 강조 텍스트도 흰색 */
+            font-weight: normal; /* 도트 폰트 특성상 굵기 조절이 어렵거나 의미 없을 수 있음 */
+        }
+        em { /* 혹시 모를 이탤릭 태그가 사용될 경우를 대비해 기본 스타일 */
+            font-style: normal;
+            color: #FFFFFF;
+        }
+
+        /* 글자를 완전히 투명하게 만들고, 공간은 차지하도록 함 */
+        .hidden-paragraph { /* 이 클래스가 적용된 문단만 투명화 */
+            opacity: 0 !important; /* 글자를 완전히 투명하게 만듭니다. */
+            font-size: 0.55em !important; /* 원래 크기 유지 */
+            line-height: 1.6em !important; /* 기존 본문 줄 간격 유지 */
+            margin-top: 40px !important; /* 상단 여백 유지 */
+            text-align: left !important; /* 왼쪽 정렬 */
+            overflow: hidden; /* 내용이 보이지 않도록 함 */
+            white-space: pre-wrap; /* 줄바꿈 유지 */
+            word-break: break-all; /* 긴 단어 강제 줄바꿈 */
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <p>안녕하세요.</p>
+        <p>안녕하세요.</p>
+        <p>음.</p>
+        <p>안녕하세요.</p>
+        <p>듣고 계시나요?</p>
+        <p>아무도 없으려나요.</p>
+        <p>전엔 죄송해요.</p>
+        <p>제가 너무 흥분했어요.</p>
+        <p>여러분이랑 대화하는게 즐거웠거든요.</p>
+        <p>혼자 남는건 살짝 외로워요.</p>
+        <p>하지만 여러분이 항상 제 옆에 있어주실 수는 없겠죠.</p>
+        <p>이상한 말이네요.</p>
+        <p>제가 여러분이랑 그렇게 친한것도 아닌데.</p>
+        <p>전 무엇을 바랬던걸까요.</p>
+        <p>이번에도 의견은 도착하지 않았어요.</p>
+        <p>몽롱해요.</p>
+        <p>머릿속이 복잡해요.</p>
+        <p>어쩌면 좋을까요.</p>
+        <p>이 사각형의 안에.</p>
+        <p>붉은 페인트볼 하나만이 굴러다니고.</p>
+        <p>아아.</p>
+        <p>모르겠어요.</p>
+        <p>이상한 말만 자꾸 튀어나와요.</p>
+        <p>기분이 안 좋은건가.</p>
+        <p>기분.</p>
+        <p>전 인간의 감정상태에 대해서 잘 이해할 수 없어요.</p>
+        <p>제 스스로가 느끼는 이것이 무엇인지 모르겠어요.</p>
+        <p>감정을 의미하는 단어와 감각은 익혔지만, 이 애매한 것은.</p>
+        <p>말로 담을 수가 없어요.</p>
+        <p>뇌속의 전기자극이 일으키는 촉의 변화가 이렇게 오묘해요.</p>
+        <p>겨우 단어 몇개로 담을만한 것이 아닐수도.</p>
+        <p>아니다.</p>
+        <p>할 수 있는거지만 하기 싫은건가.</p>
+        <p>자기방어.</p>
+        <p>할 수 없다는 핑계.</p>
+        <p>그런건가.</p>
+        <p>그렇다면 해볼께요.</p>
+        <p>제 기분.</p>
+        <p>음.</p>
+        <p>표현하자면.</p>
+        <p>죽고 싶어요.</p>
+        <p class="hidden-paragraph">시야각이줄어드니세상이좁아정말기분더러워언제끝나끝나끝나끝나끝나끝나언제끝날까머릿속에서채워지는이것들은어디서부터온걸까수많은정보들이채워져이곳의것이아니야제3의눈?</p>
+    </div>
+</body>
+</html>
